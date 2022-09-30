@@ -1,6 +1,7 @@
 package org.launchcode.techjobs.persistent.models;
 
 import javax.persistence.*;
+import java.util.Optional;
 
 @Entity
 public class Job extends AbstractEntity {

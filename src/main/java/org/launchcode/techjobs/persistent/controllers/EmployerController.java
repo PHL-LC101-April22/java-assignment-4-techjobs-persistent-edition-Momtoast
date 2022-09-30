@@ -16,9 +16,9 @@ import java.util.Optional;
 public class EmployerController {
 
     @Autowired
-    private EmployerRepository employerRepository;
+    EmployerRepository employerRepository;
 
-    @GetMapping
+    @GetMapping("")
     public String index(Model model) {
         model.addAttribute("employers", employerRepository.findAll());
         return "employers/index";
